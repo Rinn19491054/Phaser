@@ -72,7 +72,7 @@ player = game.add.sprite(32, 400, 'dude');
    game.physics.arcade.enable(player);
    player.body.bounce.y = 0.2;
    player.body.gravity.y = 300; 
-   player.body.collideworldBounds = true; 
+   player.body.collideWorldBounds = true; 
 
    // Create the enemy 
    enemy1 = game.add.sprite(760, 20, 'baddie'); 
@@ -138,7 +138,6 @@ if(life < 0 ){
    star.kill();
    star.reset(Math.floor(Math.random()*750),0) } 
  }
-
 //define loseLife Function
  loseLife(player, enemy){
    //lose life
@@ -169,4 +168,3 @@ function endGame(){
     lifelabel.visible = false;
     lifetext.visible = false; 
 } 
-Jr 
