@@ -128,7 +128,7 @@ if(life < 0 ){
  }
 }
 
-//define collectStar function F
+//define collectStar function 
   function collectStar(player,star){
  //update score variable  
  score = score +1;
@@ -137,8 +137,10 @@ if(life < 0 ){
 //remove the star and reset to the top 
    star.kill();
    star.reset(Math.floor(Math.random()*750),0) } 
+ }
+
 //define loseLife Function
- loseLife(player, enemy){ 
+ loseLife(player, enemy){
    //lose life
    enemy.kill();
    enemy.reset(10, 20); 
